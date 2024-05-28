@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DiseaseView"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#328740" >
+    <ImageButton
+        android:id="@+id/back_button"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@drawable/backbutton"
+        android:src="@drawable/back"
+        android:layout_marginTop="16dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="16dp"
+        android:contentDescription="Take photo" />
+
+    <ImageView
+        android:id="@+id/disease_img"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="10dp"
+        android:layout_height="200dp"/>
+    <TextView
+        android:id="@+id/plant_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="PlantName"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="60dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:id="@+id/disease_name"
+        android:layout_height="wrap_content"
+        android:text="DiseaseName"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/plant_name"
+        tools:ignore="MissingConstraints" />
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/scroll"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="25dp"
+        android:layout_marginHorizontal="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/care_info"
+        android:layout_height="wrap_content"
+        android:text="care_info"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintTop_toBottomOf="@+id/plant_name"
+        tools:ignore="MissingConstraints" />
+    </ScrollView>
+</LinearLayout>

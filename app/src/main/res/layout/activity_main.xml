@@ -9,16 +9,6 @@
     tools:context=".MainActivity"
     android:background="#328740" >
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.22" />
-
     <ImageView
         android:id="@+id/image_proc_type"
         android:layout_width="wrap_content"
@@ -64,6 +54,18 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints"
         android:contentDescription="Take photo" />
+
+    <Button
+        android:id="@+id/load_photo_button"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#91bd1a"
+        android:text="Load photo"
+        android:textStyle="bold"
+        android:layout_marginTop="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_page_take_photo_button" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
